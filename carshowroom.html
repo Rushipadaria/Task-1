@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car showroom</title>
+    <base href="image/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+        }
+
+        .logo {
+            height: 50px;
+            background-color: #0a1028;
+        }
+
+        .logo img {
+            width: 3%;
+            float: left;
+        }
+
+        .menu {
+            float: right;
+            margin: 14px 0;
+        }
+
+        .menu span {
+            color: orange;
+            padding-right: 8px;
+        }
+        .menu a{
+            color: aliceblue;
+        }
+
+        /* logo end  */
+        .banner {
+            width: 100%;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        /* <!-- banner end --> */
+        h2 {
+            background-color: antiquewhite;
+            padding-right: 10px;
+            clear: both;
+        }
+
+        /* <!-- h2 end --> */
+        .bestseller {
+            width: 100%;
+        }
+
+        .puc1 {
+            width: 50%;
+            height: inherit;
+            float: left;
+            padding-bottom: 20px;
+        }
+        .puc1 img{
+            filter: grayscale(500%);
+            transition: filter 300ms;
+        }
+        .puc1 img:is(:hover,:focus){
+            filter: grayscale(0%);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            margin: 12px 0px;
+            padding: 0px 12px;
+        }
+
+        .puc1 span {
+            background-color: #d1b596;
+            color: white;
+            padding: 2px 3px;
+        }
+
+        /* puc1 end  */
+        .pdt1 {
+            width: 25%;
+            float: left;
+            padding-bottom: 20px;
+        }
+
+        .pdt1 img {
+            width: 100%;
+            height: inherit;
+        }
+
+        .pdt1 span {
+            background-color: #d1b596;
+            color: white;
+            padding: 2px 3px;
+        }
+
+        .last {
+            width: 100%;
+            clear: both;
+            /* border: 1px solid black; */
+            /* padding: 15px; */
+            /* min-height: 350px; */
+        }
+
+        .last .ls {
+            width: 35%;
+            float: left;
+        }
+
+        .last .ls img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+
+        .last .lr {
+            padding: 55px 20px 0px 20px;
+            width: 65%;
+            float: right;
+            /* border-left: 1px solid black; */
+        }
+
+        .last .lr h3 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .last .lr p {
+            margin-bottom: 5%;
+        }
+
+        .last .lr span {
+            background-color: aqua;
+            padding: 5px 20px;
+            margin: 25px 0px 0px 10px;
+
+        }
+
+        .last {
+            width: 100%;
+            clear: both;
+            /* border: 1px solid black; */
+            padding: 15px;
+            /* min-height: 350px; */
+        }
+
+        .last .ls {
+            width: 35%;
+            float: right;
+            overflow: hidden;
+        }
+
+        .last .ls img {
+            width: 100%;
+            height: auto;
+            transition: all ease 1s;
+        }
+        .last .ls:hover img{
+            scale: 1.5;
+        }
+
+        .last .lr {
+            padding: 55px 20px 0px 20px;
+            width: 65%;
+            float: right;
+            /* border-left: 1px solid black; */
+        }
+
+        .last .lr h3 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .last .lr p {
+            margin-bottom: 5%;
+        }
+
+        .last .lr span {
+            background-color: aqua;
+            padding: 5px 20px;
+            margin: 25px 0px 0px 10px;
+
+        }
+
+        .footerbanner {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+        .footerbanner img {
+            width: 100%;
+        }
+
+        /* footer end */
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <img src="https://img.freepik.com/free-vector/gradient-auto-parts-logo-design_23-2149460685.jpg?size=626&ext=jpg&uid=R17276159&ga=GA1.2.1544479333.1692958629&semt=ais"
+            alt="logo">
+
+        <div class="menu">
+            <!-- <span>Home</span> -->
+            <span> <a href="">
+                    Home
+                </a></span>
+            <span> <a href="" target="_blank">
+                    Service
+                </a></span>
+            <span> <a href="">
+                    Contact
+                </a></span>
+            <span> <a href="">
+                    About
+                </a></span>
+        </div>
+    </div>
+</header>
+    <!-- logo end -->
+    <div class="banner">
+        <img src="970.jpg" alt="">
+    </div>
+    <!-- banner end -->
+    <center>
+        <h2>BEST SELER 🏎️🏎️</h2>
+    </center>
+    <!-- h2 end -->
+    <div class="bestseller">
+        <div class="puc1">
+            <img src="yellow-car-with-word-ford-front.jpg" alt="">
+            <center>
+                <h3> product 1 </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit voluptatum culpa
+                    mollitia nesciunt et cum ut, asperiores voluptates debitis fugit corporis iste? Possimus eligendi
+                    nam, id officiis dignissimos similique commodi voluptates iusto dolores distinctio eaque recusandae
+                    explicabo maiores, blanditiis, ducimus placeat dolore accusantium perspiciatis necessitatibus
+                    nostrum. Numquam ipsam alias accusamus adipisci fugit autem animi.
+                </p>
+                <span>read more</span>
+            </center>
+        </div>
+        <div class="puc1">
+            <img src="blue-black-muscle-car-with-license-plate-that-says-trans-front.jpg" alt="">
+            <center>
+                <h3> product 2 </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit voluptatum culpa
+                    mollitia nesciunt et cum ut, asperiores voluptates debitis fugit corporis iste? Possimus eligendi
+                    nam, id officiis dignissimos similique commodi voluptates iusto dolores distinctio eaque recusandae
+                    explicabo maiores, blanditiis, ducimus placeat dolore accusantium perspiciatis necessitatibus
+                    nostrum. Numquam ipsam alias accusamus adipisci fugit autem animi.
+                </p>
+                <span>read more</span>
+            </center>
+        </div>
+
+    </div>
+    <!-- puc1 end  -->
+    <center>
+        <h2>Mid Range car 🏎️🏎️</h2>
+    </center>
+    <!-- h2 end -->
+    <div class="pdt">
+        <div class="pdt1">
+            <img src="0003.jpg" alt="">
+            <center>
+                <h3> product 3 </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit voluptatum culpa
+                    mollitia nesciunt et cum ut, asperiores voluptates debitis fugit corporis iste? Possimus eligendi
+                    nam, id officiis dignissimos similique commodi voluptates iusto dolores distinctio eaque recusandae
+                    explicabo maiores, blanditiis, ducimus placeat dolore accusantium perspiciatis necessitatibus
+                    nostrum. Numquam ipsam alias accusamus adipisci fugit autem animi.
+                </p>
+                <span>read more</span>
+            </center>
+        </div>
+        <div class="pdt1">
+            <img src="0001.jpg" alt="">
+            <center>
+                <h3> product 4 </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit voluptatum culpa
+                    mollitia nesciunt et cum ut, asperiores voluptates debitis fugit corporis iste? Possimus eligendi
+                    nam, id officiis dignissimos similique commodi voluptates iusto dolores distinctio eaque recusandae
+                    explicabo maiores, blanditiis, ducimus placeat dolore accusantium perspiciatis necessitatibus
+                    nostrum. Numquam ipsam alias accusamus adipisci fugit autem animi.
+                </p>
+                <span>read more</span>
+            </center>
+        </div>
+        <div class="pdt1">
+            <img src="sports-car-driving-asphalt-road-night-generative-ai.jpg" alt="">
+            <center>
+                <h3> product 5 </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit voluptatum culpa
+                    mollitia nesciunt et cum ut, asperiores voluptates debitis fugit corporis iste? Possimus eligendi
+                    nam, id officiis dignissimos similique commodi voluptates iusto dolores distinctio eaque recusandae
+                    explicabo maiores, blanditiis, ducimus placeat dolore accusantium perspiciatis necessitatibus
+                    nostrum. Numquam ipsam alias accusamus adipisci fugit autem animi.
+                </p>
+                <span>read more</span>
+            </center>
+        </div>
+        <div class="pdt1">
+            <img src="28803.jpg" alt="">
+            <center>
+                <h3> product 6 </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit voluptatum culpa
+                    mollitia nesciunt et cum ut, asperiores voluptates debitis fugit corporis iste? Possimus eligendi
+                    nam, id officiis dignissimos similique commodi voluptates iusto dolores distinctio eaque recusandae
+                    explicabo maiores, blanditiis, ducimus placeat dolore accusantium perspiciatis necessitatibus
+                    nostrum. Numquam ipsam alias accusamus adipisci fugit autem animi.
+                </p>
+                <span>read more</span>
+            </center>
+        </div>
+    </div>
+    <center>
+        <h2>Luxury cars 🏎️🏎️</h2>
+    </center>
+    <div class="last">
+        <div class="ls">
+            <img src="mu.jpg" alt="">
+        </div>
+        <div class="lr">
+            <p>
+            <h3>product 7</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sit esse temporibus dolore ipsum nesciunt
+            neque dolorem harum mollitia fuga, cum alias nam, iusto veniam debitis distinctio nemo non voluptas
+            corrupti? Non quidem in laboriosam ut sint? Eos velit consectetur iure obcaecati maiores illum maxime
+            tempore repudiandae, voluptatem nam dolorem placeat ex ullam reprehenderit nesciunt est fugit ipsa tenetur
+            totam inventore commodi atque corporis aut! Quisquam labore assumenda, reprehenderit incidunt dignissimos
+            voluptates suscipit eum aliquid amet maiores est culpa tempore unde eveniet provident porro ea!
+            </p>
+
+            <span>Read more</span>
+        </div>
+    </div>
+    <div class="last">
+        <div class="lr">
+            <p>
+            <h3>product 8</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sit esse temporibus dolore ipsum nesciunt
+            neque dolorem harum mollitia fuga, cum alias nam, iusto veniam debitis distinctio nemo non voluptas
+            corrupti? Non quidem in laboriosam ut sint? Eos velit consectetur iure obcaecati maiores illum maxime
+            tempore repudiandae, voluptatem nam dolorem placeat ex ullam reprehenderit nesciunt est fugit ipsa tenetur
+            totam inventore commodi atque corporis aut! Quisquam labore assumenda, reprehenderit incidunt dignissimos
+            voluptates suscipit eum aliquid amet maiores est culpa tempore unde eveniet provident porro ea!
+            </p>
+
+            <span>Read more</span>
+        </div>
+        <div class="ls">
+            <img src="supara.jpg" alt="">
+        </div>
+    </div>
+    <!-- lux end  -->
+    <footer>
+        <div class="footerbaner">
+            <img src="footer baner.jpg" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
